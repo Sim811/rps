@@ -1,7 +1,7 @@
 var rock = document.getElementById("rock");
 var paper = document.getElementById("paper");
 var scissors = document.getElementById("scissors");
-var output = document.getElementById("output")
+var output = document.getElementById("output");
 var userChoice;
 var compChoice;
 
@@ -47,19 +47,19 @@ scissors.addEventListener("click", function() {
 
 function winLose(userChoice, compChoice)  {
   if (userChoice === compChoice){
-  console.log("Tie!");
+    return output.innerHTML = "Tie!";
   }else if (userChoice === 'paper' && compChoice === 'rock'){
-  console.log("You win!");
+    return output.innerHTML = "You win! Paper beats Rock";
   }else if (userChoice === 'rock' && compChoice === 'scissors'){
-  console.log("You win!");
+    return output.innerHTML = "You win! Rock beats Scissors";
   }else if (userChoice === 'scissors' && compChoice === 'rock'){
-  console.log("You lose!");
+    return output.innerHTML = "You lose! ";
   }else if (userChoice === 'rock' && compChoice === 'paper'){
-  console.log("You lose!");
+    return output.innerHTML = "You lose!";
   }else if (userChoice === 'paper' && compChoice === 'scissors'){
-  console.log("You lose!");
+    return output.innerHTML = "You lose!";
   }else if (userChoice === 'scissors' || compChoice === 'paper'){
-  console.log("You win!");
+    return output.innerHTML = "You win!";
   }
 
 }
