@@ -1,26 +1,37 @@
 body {
-  background: white;
+  background: rgb(187, 163, 163);
+  text-align: center;
+  
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+
 }
 
 .ro {
   height: 200px;
   width: 200px;
   cursor: pointer;
-
+  
 }
 
 .pa {
   height: 200px;
   width: 200px;
   cursor: pointer;
-
+  
+  
 }
 
 .sc {
-
   height: 200px;
   width: 200px;
   cursor: pointer;
-
+  
 }
+
+
 

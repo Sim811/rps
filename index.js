@@ -16,7 +16,7 @@ rock.addEventListener("click", function()  {
   compChoice = rps[array];
   
   // display those choices to the browser
-  console.log(userChoice, compChoice)
+  
 
   // decide who wins
   winLose(userChoice, compChoice)
@@ -28,7 +28,7 @@ paper.addEventListener("click", function() {
   compChoice = rps[array];
 
   // display those choices to the browser
-  console.log(userChoice, compChoice)
+  
 
   // decide who wins
   winLose(userChoice, compChoice)
@@ -39,7 +39,7 @@ scissors.addEventListener("click", function() {
   // get comp choice
   compChoice = rps[array];
 
-  // display those choices to the broconsole.log(userChoice, compChoice)
+  // display those choices to the browser
   
   // decide who wins
   winLose(userChoice, compChoice)
@@ -53,13 +53,13 @@ function winLose(userChoice, compChoice)  {
   }else if (userChoice === 'rock' && compChoice === 'scissors'){
     return output.innerHTML = "You win! Rock beats Scissors";
   }else if (userChoice === 'scissors' && compChoice === 'rock'){
-    return output.innerHTML = "You lose! ";
+    return output.innerHTML = "You lose! CPU chose Rock ";
   }else if (userChoice === 'rock' && compChoice === 'paper'){
-    return output.innerHTML = "You lose!";
+    return output.innerHTML = "You lose! CPU chose Paper";
   }else if (userChoice === 'paper' && compChoice === 'scissors'){
-    return output.innerHTML = "You lose!";
+    return output.innerHTML = "You lose! CPU chose Scissors";
   }else if (userChoice === 'scissors' || compChoice === 'paper'){
-    return output.innerHTML = "You win!";
+    return output.innerHTML = "You win! Scissors beats Paper";
   }
 
 }
